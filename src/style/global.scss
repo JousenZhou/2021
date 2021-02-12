@@ -1,0 +1,12 @@
+@import '~element-plus/lib/theme-chalk/index.css';
+@font-face {
+  font-family: MyFontName;//自定义字体名称
+  src: url('https://image3.myjuniu.com/pingFang%20Medium.ttf')
+}
+
+* {
+  font-family: MyFontName, Microsoft YaHei, Avenir, Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
