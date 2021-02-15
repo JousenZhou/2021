@@ -4,7 +4,11 @@
             <menu-auth />
         </div>
         <div class="layout-right">
-            <header></header>
+            <header>
+                <layout-control :style="{ display: development || cache.length > 1 ? 'block' : 'none' }">
+                    <tags-view :routes="routes" />
+                </layout-control>
+            </header>
             <section>
                 <router-view v-slot="{ Component }">
                     <keep-alive>
@@ -18,11 +22,23 @@
 
 <script>
 import { Options, mixins } from 'vue-class-component';
+import { baseRouter } from '@/router';
+import layoutControl from './components/control';
 @Options({
     name: 'Layout',
-    components: {}
+    components: {
+        layoutControl
+    }
 })
-export default class App extends mixins() {}
+export default class App extends mixins() {
+    routes = baseRouter;
+    get development() {
+        return process.env.NODE_ENV === 'development' ? true : !window.ip;
+    }
+    get cache() {
+        return this.$store.state['tagsView']['cachedViews'];
+    }
+}
 </script>
 
 <style scoped lang="scss">

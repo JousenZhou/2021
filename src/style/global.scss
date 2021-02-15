@@ -1,8 +1,22 @@
-@import '~element-plus/lib/theme-chalk/index.css';
-@font-face {
-  font-family: MyFontName;//自定义字体名称
-  src: url('https://image3.myjuniu.com/pingFang%20Medium.ttf')
+/* 改变主题色变量 element的主题*/
+$--color-primary:#FFA914;
+/* 自定义主题色变量 修改我们自己写的样式 */
+.primaryColor{
+  background-color: #FFA914 !important;
 }
+.primaryColor2{
+  color: #FFA914 !important;
+}
+.primaryFontColor{
+  color: #FFA914 !important;
+}
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import '~element-plus/lib/theme-chalk/index.css';
+//@font-face {
+//  font-family: MyFontName;//自定义字体名称
+//  src: url('https://image3.myjuniu.com/pingFang%20Medium.ttf')
+//}
 
 * {
   font-family: MyFontName, Microsoft YaHei, Avenir, Helvetica, Arial, sans-serif;

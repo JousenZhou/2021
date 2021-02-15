@@ -183,120 +183,120 @@ export default class App extends mixins() {
     }
 }
 </style>
-<!--<style lang="scss">-->
-<!--.sideBar {-->
-<!--    .el-menu {-->
-<!--        border: none;-->
-<!--    }-->
-<!--    .el-menu-sideBar {-->
-<!--        flex: 1;-->
-<!--        overflow-x: hidden;-->
-<!--        overflow-y: auto;-->
-<!--        &::-webkit-scrollbar {-->
-<!--            width: 2px;-->
-<!--            height: 2px;-->
-<!--        }-->
+<style lang="scss">
+.sideBar {
+    .el-menu {
+        border: none;
+    }
+    .el-menu-sideBar {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            width: 2px;
+            height: 2px;
+        }
 
-<!--        /*滚动条的轨道*/-->
-<!--        &::-webkit-scrollbar-track {-->
-<!--            background-color: rgb(27, 36, 59);-->
-<!--        }-->
+        /*滚动条的轨道*/
+        &::-webkit-scrollbar-track {
+            background-color: rgb(27, 36, 59);
+        }
 
-<!--        /*滚动条里面的小方块，能向上向下移动*/-->
-<!--        &::-webkit-scrollbar-thumb {-->
-<!--            background-color: rgb(27, 36, 59);-->
-<!--            border-radius: 5px;-->
-<!--            border: 1px solid rgb(27, 36, 59);-->
-<!--            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);-->
-<!--        }-->
+        /*滚动条里面的小方块，能向上向下移动*/
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(27, 36, 59);
+            border-radius: 5px;
+            border: 1px solid rgb(27, 36, 59);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        }
 
-<!--        &::-webkit-scrollbar-thumb:hover {-->
-<!--            background-color: rgb(27, 36, 59);-->
-<!--        }-->
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: rgb(27, 36, 59);
+        }
 
-<!--        &::-webkit-scrollbar-thumb:active {-->
-<!--            background-color: rgb(27, 36, 59);-->
-<!--        }-->
+        &::-webkit-scrollbar-thumb:active {
+            background-color: rgb(27, 36, 59);
+        }
 
-<!--        /*边角，即两个滚动条的交汇处*/-->
-<!--        &::-webkit-scrollbar-corner {-->
-<!--            background-color: rgb(27, 36, 59);-->
-<!--        }-->
-<!--    }-->
-<!--    .el-menu-sideBar:not(.el-menu&#45;&#45;collapse) {-->
-<!--        padding: 0 10px;-->
-<!--        width: 160px;-->
-<!--        min-height: 400px;-->
-<!--        /*> .el-menu-item:first-child {*/-->
-<!--        /*    margin: 0px 6px;*/-->
-<!--        /*}*/-->
-<!--    }-->
-<!--    .el-submenu .el-menu-item {-->
-<!--        /*min-width: auto !important;*/-->
-<!--    }-->
-<!--    .el-menu-item,-->
-<!--    .el-submenu__title {-->
-<!--        height: 42px !important;-->
-<!--        line-height: 42px !important;-->
-<!--        font-size: 13px;-->
-<!--    }-->
-<!--    header {-->
-<!--        .el-input__inner {-->
-<!--            background: #37466c;-->
-<!--            border: none;-->
-<!--            outline: none;-->
-<!--            font-size: 12px;-->
-<!--            color: white;-->
-<!--        }-->
-<!--    }-->
-<!--    .el-submenu {-->
-<!--        box-sizing: border-box;-->
-<!--        border-radius: 5px;-->
-<!--        margin: 4px 0;-->
-<!--    }-->
-<!--    .is-opened {-->
-<!--        background: rgba(255, 255, 255, 0.04) !important;-->
-<!--        div,-->
-<!--        ul,-->
-<!--        li {-->
-<!--            width: 100%;-->
-<!--            background: none !important;-->
-<!--        }-->
-<!--        [aria-expanded='true'] {-->
-<!--            margin: 4px 6px;-->
-<!--            width: auto !important;-->
-<!--            background: rgba(255, 255, 255, 0.04) !important;-->
-<!--            > div,-->
-<!--            ul {-->
-<!--                text-indent: -3px;-->
-<!--            }-->
-<!--        }-->
-<!--    }-->
-<!--    [aria-expanded='true'] {-->
-<!--        [icon='true'] {-->
-<!--            color: #ffa914;-->
-<!--        }-->
-<!--    }-->
-<!--}-->
-<!--/*侧面弹出来的*/-->
-<!--.el-menu&#45;&#45;vertical {-->
-<!--    .el-menu {-->
-<!--        /*min-width: auto; */-->
-<!--        max-width: 160px;-->
-<!--        li,-->
-<!--        .el-submenu__title {-->
-<!--            /*width: 160px !important;*/-->
-<!--            height: 48px !important;-->
-<!--            line-height: 48px !important;-->
-<!--        }-->
-<!--    }-->
-<!--}-->
-<!--.el-autocomplete-suggestion {-->
-<!--    padding-bottom: 10px;-->
-<!--    li {-->
-<!--        font-size: 12px;-->
-<!--        height: 28px;-->
-<!--        line-height: 28px;-->
-<!--    }-->
-<!--}-->
-<!--</style>-->
+        /*边角，即两个滚动条的交汇处*/
+        &::-webkit-scrollbar-corner {
+            background-color: rgb(27, 36, 59);
+        }
+    }
+    .el-menu-sideBar:not(.el-menu--collapse) {
+        padding: 0 10px;
+        width: 160px;
+        min-height: 400px;
+        /*> .el-menu-item:first-child {*/
+        /*    margin: 0px 6px;*/
+        /*}*/
+    }
+    .el-submenu .el-menu-item {
+        /*min-width: auto !important;*/
+    }
+    .el-menu-item,
+    .el-submenu__title {
+        height: 42px !important;
+        line-height: 42px !important;
+        font-size: 13px;
+    }
+    header {
+        .el-input__inner {
+            background: #37466c;
+            border: none;
+            outline: none;
+            font-size: 12px;
+            color: white;
+        }
+    }
+    .el-submenu {
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin: 4px 0;
+    }
+    .is-opened {
+        background: rgba(255, 255, 255, 0.04) !important;
+        div,
+        ul,
+        li {
+            width: 100%;
+            background: none !important;
+        }
+        [aria-expanded='true'] {
+            margin: 4px 6px;
+            width: auto !important;
+            background: rgba(255, 255, 255, 0.04) !important;
+            > div,
+            ul {
+                text-indent: -3px;
+            }
+        }
+    }
+    [aria-expanded='true'] {
+        [icon='true'] {
+            color: #ffa914;
+        }
+    }
+}
+/*侧面弹出来的*/
+.el-menu--vertical {
+    .el-menu {
+        /*min-width: auto; */
+        max-width: 160px;
+        li,
+        .el-submenu__title {
+            /*width: 160px !important;*/
+            height: 48px !important;
+            line-height: 48px !important;
+        }
+    }
+}
+.el-autocomplete-suggestion {
+    padding-bottom: 10px;
+    li {
+        font-size: 12px;
+        height: 28px;
+        line-height: 28px;
+    }
+}
+</style>

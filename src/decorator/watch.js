@@ -1,4 +1,5 @@
 import { createDecorator } from 'vue-class-component';
+import { nextTick } from 'vue';
 export function Watch(path, options) {
     if (options === void 0) {
         options = {};
@@ -35,10 +36,9 @@ export function WatchMounted(path, options) {
             }
             return mounted;
         }
-        componentOptions.mounted = mergeFunction((Vue) => {
-            Vue.$nextTick(() => {
-                Vue.$watch(path, Vue[handler], options);
-            });
+        componentOptions.mounted = mergeFunction(async (Vue) => {
+            await nextTick();
+            Vue.$watch(path, Vue[handler], options);
         });
     });
 }

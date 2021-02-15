@@ -9,6 +9,7 @@
     "delete node_modules": "rimraf node_modules"
   },
   "dependencies": {
+    "flyio": "^0.6.14",
     "core-js": "^3.6.5",
     "element-plus": "^1.0.2-beta.32",
     "register-service-worker": "^1.7.1",
