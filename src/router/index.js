@@ -1,4 +1,5 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+// eslint-disable-next-line no-unused-vars
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';
 import requireContext from '@/until/requireContext';
 import authority from './authority';
 const mir = requireContext(require.context('./modules', true, /\.js$/));
