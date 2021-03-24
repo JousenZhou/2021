@@ -60,6 +60,6 @@ export default class App extends mixins() {
             flex: 1;
             overflow: hidden;
         }
-    }
+    } cs
 }
 </style>
